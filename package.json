@@ -1,0 +1,10 @@
+{
+  "name": "google-tts-languages",
+  "version": "1.0.0",
+  "description": "All the supported languages in Google Translate TTS Engine",
+  "main": "index.js",
+  "repository": "https://github.com/ncpierson/google-tts-languages",
+  "author": "Nick Pierson",
+  "license": "MIT",
+  "private": false
+}
