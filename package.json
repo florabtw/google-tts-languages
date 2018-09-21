@@ -9,7 +9,7 @@
   "private": false,
   "devDependencies": {
     "ava": "^0.25.0",
-    "google-tts-api": "^0.0.2",
+    "google-tts-api": "ncpierson/google-tts",
     "prettier": "^1.14.3"
   },
   "scripts": {

@@ -1255,9 +1255,9 @@ globby@^6.0.0:
     pify "^2.0.0"
     pinkie-promise "^2.0.0"
 
-google-tts-api@^0.0.2:
+google-tts-api@ncpierson/google-tts:
   version "0.0.2"
-  resolved "https://registry.yarnpkg.com/google-tts-api/-/google-tts-api-0.0.2.tgz#169bc310778a4624146cbe26f367873a862c3894"
+  resolved "https://codeload.github.com/ncpierson/google-tts/tar.gz/b5d1b8561fc1a34fac1e66bb280cd153d1a31044"
   dependencies:
     isomorphic-fetch "^2.2.1"
 
