@@ -5,12 +5,12 @@ const test = require('ava'),
   URL = require('url').URL;
 
 function attemptRequest(url) {
-  const { host, pathname, search } = new URL(url);
+  const {host, pathname, search} = new URL(url);
 
   const options = {
     host: host,
     path: pathname + search,
-    timeout: 10000
+    timeout: 10000,
   };
 
   return new Promise((resolve, reject) => {
@@ -19,14 +19,20 @@ function attemptRequest(url) {
         if (res.statusCode >= 300) reject(url);
         resolve();
       })
-      .on('error', reject);
+      .on('error', () => reject(url));
   });
 }
 
 test('All language codes are valid', async t => {
-  const urlPromises = languages.map(language => tts('test', language.code));
-  const urls = await Promise.all(urlPromises);
-  const responses = urls.map(attemptRequest);
+  const responses = languages.map(language => {
+    return tts('test', language.code)
+      .then(attemptRequest)
+      .catch((err) => {
+        console.log('language code failed: ' + language.code);
+        console.log(err);
+        t.fail('language code failed: ' + language.code);
+      });
+  });
 
   await Promise.all(responses);
   t.pass();
