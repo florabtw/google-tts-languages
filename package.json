@@ -9,7 +9,8 @@
   "private": false,
   "devDependencies": {
     "ava": "^0.25.0",
-    "google-tts-api": "^0.0.2"
+    "google-tts-api": "^0.0.2",
+    "prettier": "^1.14.3"
   },
   "scripts": {
     "test": "ava"
