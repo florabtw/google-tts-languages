@@ -3,7 +3,6 @@
   "version": "0.0.3",
   "description": "All the supported languages in Google Translate TTS Engine",
   "main": "./lib/index.js",
-  "module": "./index.js",
   "repository": "https://github.com/ncpierson/google-tts-languages",
   "author": "Nick Pierson",
   "license": "MIT",
@@ -17,7 +16,7 @@
     "prettier": "^1.14.3"
   },
   "scripts": {
-    "build": "babel index.js --out-dir lib",
+    "build": "babel src --out-dir lib",
     "prepare": "yarn build",
     "test": "ava"
   },
@@ -34,7 +33,7 @@
         {
           "targets": {
             "node": "current",
-            "browsers": "> 0.25%, not ie 11, not op_mini all"
+            "uglify": true
           }
         }
       ]
