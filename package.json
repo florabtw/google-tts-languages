@@ -1,18 +1,43 @@
 {
   "name": "google-tts-languages",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "All the supported languages in Google Translate TTS Engine",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "module": "./index.js",
   "repository": "https://github.com/ncpierson/google-tts-languages",
   "author": "Nick Pierson",
   "license": "MIT",
   "private": false,
   "devDependencies": {
     "ava": "^0.25.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0",
     "google-tts-api": "ncpierson/google-tts",
     "prettier": "^1.14.3"
   },
   "scripts": {
+    "build": "babel index.js --out-dir lib",
+    "prepare": "yarn build",
     "test": "ava"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ],
+    "babel": "inherit"
+  },
+  "babel": {
+    "presets": [
+      [
+        "env",
+        {
+          "targets": {
+            "node": "current",
+            "browsers": "> 0.25%, not ie 11, not op_mini all"
+          }
+        }
+      ]
+    ]
   }
 }
