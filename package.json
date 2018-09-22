@@ -1,6 +1,6 @@
 {
   "name": "google-tts-languages",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "All the supported languages in Google Translate TTS Engine",
   "main": "./lib/index.js",
   "repository": "https://github.com/ncpierson/google-tts-languages",
