@@ -1,5 +1,5 @@
 const test = require('ava'),
-  languages = require('./index.js'),
+  languages = require('./src/index.js'),
   tts = require('google-tts-api'),
   http = require('https'),
   URL = require('url').URL;
