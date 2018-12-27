@@ -6,6 +6,7 @@ const languages = [
   { code: "bn-BD",       name: "Bengali (Bangladesh)" },
   { code: "bn-IN",       name: "Bengali (India)" },
   { code: "bs",          name: "Bosnian" },
+  { code: "my",          name: "Burmese (Myanmar)" },
   { code: "ca-ES",       name: "Catalan" },
   { code: "cmn-Hant-TW", name: "Chinese" },
   { code: "hr-HR",       name: "Croatian" },
