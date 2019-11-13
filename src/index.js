@@ -48,6 +48,7 @@ const languages = [
   { code: "sw",          name: "Swahili" },
   { code: "sv-SE",       name: "Swedish" },
   { code: "ta",          name: "Tamil" },
+  { code: "te",          name: "Telugu" },
   { code: "th-TH",       name: "Thai" },
   { code: "tr-TR",       name: "Turkish" },
   { code: "uk-UA",       name: "Ukrainian" },
