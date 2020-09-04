@@ -56,6 +56,7 @@ const languages = [
   { code: "th-TH",       name: "Thai" },
   { code: "tr-TR",       name: "Turkish" },
   { code: "uk-UA",       name: "Ukrainian" },
+  { code: "ur",          name: "Urdu" },
   { code: "vi-VN",       name: "Vietnamese" },
   { code: "cy",          name: "Welsh" }
 ];
