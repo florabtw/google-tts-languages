@@ -17,6 +17,7 @@ const languages = [
   { code: "en-GB",       name: "English (United Kingdom)" },
   { code: "en-US",       name: "English (United States)" },
   { code: "eo",          name: "Esperanto" },
+  { code: "et",          name: "Estonian" },
   { code: "fil-PH",      name: "Filipino" },
   { code: "fi-FI",       name: "Finnish" },
   { code: "fr-FR",       name: "French" },
