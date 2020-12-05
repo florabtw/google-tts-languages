@@ -1,5 +1,7 @@
 # Google TTS Languages
 
+> :warning: This repo is deprecated and replaced by [google-translate-tts](https://github.com/ncpierson/google-translate-tts)
+
 This repository is for keeping track of the current languages supported
 by the "secret" Google Translate TTS API. They are not documented anywhere, so
 I have to keep track of them manually, and sometimes they change.
